@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLASS_SALES_ORDER_DETAILS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Sales Order Details Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>To Get The Sales Order Details</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MULTIPLE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>To Get The Details of Multiple Sales Order Details</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <SCONAME>LT_OUTPUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <SCONAME>PVBELN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sales Document</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTIPLE_DATA</CMPNAME>
+     <SCONAME>LT_OUTPUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTIPLE_DATA</CMPNAME>
+     <SCONAME>SVBELN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
