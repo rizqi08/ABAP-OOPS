@@ -55,8 +55,11 @@ CREATE OBJECT LO_OBJECT.
    - **ZCL_TEST** = Nama class.
 
 **Q:** Bagaimana cara mendeklarasikan Static dan Instance Method dalam Local classes?
+
 **A:** Instance Method: `Methods`, Static Method: `Class-Methods`.
+
 **Q:** Bagaimana cara mendeklarasikan atribut Static dan Instance dalam Local classes?
+
 **A:** Instance attribute: `DATA`, Static attribute: `CLASS-DATA`.
 
    Instance Method dapat mengakses atribut instance dan static.
