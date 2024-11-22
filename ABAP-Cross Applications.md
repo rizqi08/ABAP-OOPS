@@ -32,7 +32,7 @@
 - Semua parameter harus diteruskan dengan nilai (pass by value).
 - Harus ada parameter RETURN dengan tipe 'BAPIRET2'.
 - Modul fungsi harus RFC-enabled.
-- Modul fungsi harus dilepaskan.
+- Modul fungsi harus diReleased.
 
 **Pembuatan Objek Bisnis**  
 - Kode transaksi untuk pembuat objek bisnis: **SWO1**
