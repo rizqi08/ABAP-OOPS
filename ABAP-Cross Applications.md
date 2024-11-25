@@ -111,6 +111,8 @@
 - EDI adalah singkatan dari **Electronic Data Interchange**.
 - Jika format data berubah antar sistem, itu disebut EDI.
 - EDI digunakan antara SAP ke Non-SAP, Non-SAP ke SAP, dan SAP-SAP.
+- Sebagai contoh - Terdapat purchase order di Sistem -1, ketika data purchase order tersebut mengalir ke sistem lain, data tersebut diubah menjadi sales order. Hal ini disebut sebagai EDI, karena format datanya berubah.
+- EDI berlaku di seluruh bisnis.
 
 **Arsitektur IDOC**  
 - Arsitektur IDOC memiliki 3 bagian:
