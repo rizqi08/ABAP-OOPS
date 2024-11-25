@@ -103,6 +103,8 @@
 - ALE adalah singkatan dari **Application Link Enabling**.
 - Jika format data tidak berubah antar sistem, itu disebut ALE.
 - ALE selalu digunakan antara sistem SAP.
+- Sebagai contoh - Ada sebuah purchase order di sistem SAP-1 dan data purchase order yang sama mengalir ke sistem SAP-2 lainnya. Hal ini disebut sebagai ALE, karena format data tidak berubah.
+- ALE selalu digunakan dalam lingkup bisnis.
 
 **EDI**  
 - EDI adalah istilah yang lebih lama dan sudah ada jauh sebelum SAP.
