@@ -37,7 +37,275 @@
       </RSFDO>
      </DOCUMENTATION>
     </item>
+    <item>
+     <FUNCNAME>ZIDOC_INPUT_ZMT_EMPLOYEE</FUNCNAME>
+     <SHORT_TEXT>IDoc -&gt; BAPI: ZIDOC_INPUT_ZMT_EMPLOYEE</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>INPUT_METHOD</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-INPUTMETHD</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MASS_PROCESSING</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-MASS_PROC</DBFIELD>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>WORKFLOW_RESULT</PARAMETER>
+       <DBFIELD>BDWF_PARAM-RESULT</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>APPLICATION_VARIABLE</PARAMETER>
+       <DBFIELD>BDWF_PARAM-APPL_VAR</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>IN_UPDATE_TASK</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-UPDATETASK</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>CALL_TRANSACTION_DONE</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-CALLTRANS</DBFIELD>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <DBSTRUCT>EDIDC</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <DBSTRUCT>BDIDOCSTAT</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <DBSTRUCT>BDWFRETVAR</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <DBSTRUCT>BDI_SER</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>WRONG_FUNCTION_CALLED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>INPUT_METHOD</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MASS_PROCESSING</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WORKFLOW_RESULT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>APPLICATION_VARIABLE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_UPDATE_TASK</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALL_TRANSACTION_DONE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WRONG_FUNCTION_CALLED</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
    </FUNCTIONS>
+   <LONGTEXTS_ZIDOC_INPUT_ZMT_EMPLOYEE>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZIDOC_INPUT_ZMT_EMPLOYEE</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00036</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZIDOC_INPUT_ZMT_EMPLOYEE</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This function module was generated from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>object &lt;LS&gt;ZEMPLOYEE&lt;/&gt; and method &lt;LS&gt;CREATE&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>, for BAPI calls using ALE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The interface of the module was defined as a standard API in ALE. The</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>data is provided by the ALE layer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The function module is executed in the inbound system by the ALE layer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>It converts the data from the IDoc into BAPI parameters and calls the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>BAPI in the inbound system. For more information about this BAPI, see</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&gt;&gt;&gt;&gt;DOCULINK&lt;(&gt;&lt;&lt;)&gt;&lt;(&gt;&lt;&lt;)&gt;&lt;(&gt;&lt;&lt;)&gt;&lt;(&gt;&lt;&lt;)&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>When this module is executed, a new IDoc status is written. This status</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>indicates either that the BAPI was called successfully in this system</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(status 53) or that errors occurred (status 51).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>BAPI return parameters specify how the ALE layer writes the IDoc status.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>If errors occur, the ALE layer is responsible. How the BAPI return</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>parameters work:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If the BAPI return parameter is an EXPORTING parameter, one single IDoc</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status record is written. If the message has type A or E, the IDoc is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>given status 51 (application document not posted). Otherwise (for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>message types W, I, or S), the IDoc is given status 53 (application</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>document posted).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If the return parameter is a tables parameter, multiple IDoc status</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>records can be written. Message types determine the IDoc status. If a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>message has type A or E in the table, status 51 is written for the IDoc</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(application document not posted) for all entries except those with the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>type S (entries with types A, E, W, or I). For messages with type &apos;S&apos;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>no IDoc status appears. If a message in the table has type &apos;A&apos; or &apos;E&apos;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status &apos;53&apos; (application document posted) is written for &apos;W&apos;, &apos;I&apos; or</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&apos;S&apos;. The status records are written to the database in the same sequence</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>as the messages in the return parameter.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If the return parameter is empty, the BAPI call was successful. In this</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>case, an IDoc status record with status 53 (application document posted)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>is written by the ALE layer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If errors occur, the application must ensure that the data is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>consistent, for example by rolling back unwanted changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can use the ALE error handling functions (create a work item) to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>process any errors.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZIDOC_INPUT_ZMT_EMPLOYEE>
   </asx:values>
  </asx:abap>
 </abapGit>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>Z1BP_EMPLOYEE_10</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Structure for Employee</DDTEXT>
+    <MASTERLANG>E</MASTERLANG>
+    <EXCLASS>1</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>EID</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000020</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000010</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ENAME</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000080</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000040</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+   </DD03P_TABLE>
+   <SEGMENT_DEFINITION>
+    <item>
+     <SEGMENTHEADER>
+      <SEGTYP>Z1BP_EMPLOYEE_10</SEGTYP>
+      <GENERATED>X</GENERATED>
+      <DESCRP>Structure for Employee</DESCRP>
+     </SEGMENTHEADER>
+     <SEGMENTDEFINITION>
+      <SEGTYP>Z1BP_EMPLOYEE_10</SEGTYP>
+      <SEGDEF>Z2BP_EMPLOYEE_10000</SEGDEF>
+      <FIELDNUM>0002</FIELDNUM>
+      <EXPLENG>0050</EXPLENG>
+     </SEGMENTDEFINITION>
+     <SEGMENTSTRUCTURES>
+      <EDISEGSTRU>
+       <SEGTYP>Z1BP_EMPLOYEE_10</SEGTYP>
+       <POS>0001</POS>
+       <FIELDNAME>EID</FIELDNAME>
+       <ROLLNAME>ZDEEID_10</ROLLNAME>
+       <EXPLENG>0010</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1BP_EMPLOYEE_10</SEGTYP>
+       <POS>0002</POS>
+       <FIELDNAME>ENAME</FIELDNAME>
+       <ROLLNAME>ZDEENAME_10</ROLLNAME>
+       <EXPLENG>0040</EXPLENG>
+      </EDISEGSTRU>
+     </SEGMENTSTRUCTURES>
+    </item>
+   </SEGMENT_DEFINITION>
+  </asx:values>
+ </asx:abap>
+</abapGit>
